@@ -51,7 +51,7 @@ namespace PronunciationAssessmentDemo
 
         static async Task Main(string[] args)
         {
-            string audioFilePath = "C:/Users/v-dkamali/Downloads/kamwav.wav";  
+            string audioFilePath = "C:/Users/kamali/Downloads/kamwav.wav";  
             byte[] audioBytes = File.ReadAllBytes(audioFilePath);
             string referenceText = "school"; 
             float accuracyScore = await AssessPronunciation(audioBytes, referenceText);
